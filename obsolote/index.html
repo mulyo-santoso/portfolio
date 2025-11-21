@@ -202,16 +202,10 @@
         }
 
         .hero h1 {
-            font-size: 3.5rem; /* Original size */
+            font-size: 3.5rem;
             font-weight: 700;
             margin-bottom: 20px;
             color: white;
-            /* New styles for single-line display */
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: inline-block; /* Required for the single-line effect to work with block elements */
-            max-width: 100%; /* Ensure it respects the parent's width */
         }
 
         .hero p {
@@ -652,11 +646,8 @@
                 margin: 15px 0;
             }
 
-            /* Adjust font size on smaller screens to help with one-line display (or at least reduce wrapping) */
             .hero h1 {
-                font-size: 2rem; 
-                white-space: normal; /* Allow wrapping on small screens to prevent overflow */
-                text-overflow: clip;
+                font-size: 2.5rem;
             }
 
             .project-grid {
@@ -670,7 +661,7 @@
 
         @media (max-width: 576px) {
             .hero h1 {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             .hero p {
@@ -689,6 +680,7 @@
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
             <nav class="navbar">
@@ -710,6 +702,7 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
@@ -720,6 +713,7 @@
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-title">
@@ -748,12 +742,14 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-title">
                 <h2>My Projects</h2>
             </div>
             <div class="project-grid">
+                <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="pic/k8s.png" alt="ELT Pipeline using Airflow and PostgreSQL in Kubernetes">
@@ -773,6 +769,7 @@
                     </div>
                 </div>
 
+                <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="pic/terraform_workflow.png" alt="ELT Pipeline using AWS Glue using Terraform">
@@ -792,6 +789,7 @@
                     </div>
                 </div>
 
+                <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="pic/elt_snowflake_dbt.png" alt="Building & Maintains Data Pipeline on Snowflake">
@@ -810,6 +808,7 @@
                     </div>
                 </div>
 
+                <!-- Project 4 -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src=" pic/jenkins.png" alt="CI/CD ELT Pipeline using GitHub Action">
@@ -829,6 +828,7 @@
                     </div>
                 </div>
 
+                <!-- Project 5 -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="pic/mongodb_data_wrangling.png" alt="Data Wrangling on MongoDB">
@@ -847,6 +847,7 @@
                     </div>
                 </div>
 
+                <!-- Project 6 -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="pic/dbt_snowflake.png" alt="Ensuring Data Quality & Reliability Data on Snowflake">
@@ -868,12 +869,14 @@
         </div>
     </section>
 
-  <section id="certificates" class="certificates">
+  <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
         <div class="container">
             <div class="section-title">
                 <h2>My Certificates</h2>
             </div>
             <div class="project-grid">
+                <!-- Certificate 1 -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="pic/python-data-science.png" alt="Python Fot Data Science">
@@ -891,7 +894,8 @@
                     </div>
                 </div>
 
-                 <div class="project-card">
+                 <!-- Certificates 2 -->
+                <div class="project-card">
                     <div class="project-image">
                         <img src="pic/big-data.png" alt="Big Data">
                     </div>
@@ -909,6 +913,7 @@
                     </div>
                 </div>
 
+                <!-- Certificates 3 -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="pic/sql.png" alt="SQL & Relational Database">
@@ -930,6 +935,7 @@
         </div> 
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-title">
@@ -1070,6 +1076,7 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-title">
@@ -1125,6 +1132,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -1140,6 +1148,7 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
     <div class="back-to-top" id="backToTop">
         <i class="fas fa-arrow-up"></i>
     </div>
