@@ -196,22 +196,16 @@
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 900px; /* Increased max-width */
             margin: 0 auto;
             animation: fadeInUp 1s ease;
         }
 
         .hero h1 {
-            font-size: 3.5rem; /* Original size */
+            font-size: 3.2rem; /* Adjusted font size */
             font-weight: 700;
             margin-bottom: 20px;
             color: white;
-            /* New styles for single-line display */
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: inline-block; /* Required for the single-line effect to work with block elements */
-            max-width: 100%; /* Ensure it respects the parent's width */
         }
 
         .hero p {
@@ -652,11 +646,8 @@
                 margin: 15px 0;
             }
 
-            /* Adjust font size on smaller screens to help with one-line display (or at least reduce wrapping) */
             .hero h1 {
-                font-size: 2rem; 
-                white-space: normal; /* Allow wrapping on small screens to prevent overflow */
-                text-overflow: clip;
+                font-size: 2.2rem; /* Adjusted for wrapping on tablets/phones */
             }
 
             .project-grid {
@@ -670,7 +661,7 @@
 
         @media (max-width: 576px) {
             .hero h1 {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             .hero p {
